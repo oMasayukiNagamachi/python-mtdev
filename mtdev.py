@@ -140,7 +140,7 @@ class Device:
         '''
         if self._fd == -1:
             return
-        mtdev_close(POINTER(self._device))
+        mtdev_close(pointer(self._device))
         os.close(self._fd)
         self._fd = -1
 
