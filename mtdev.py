@@ -13,6 +13,8 @@ import os
 from ctypes import cdll, Structure, c_ulong, c_int, c_ushort, \
                    c_void_p, pointer, POINTER, byref
 
+__version__ = '0.2'
+
 # load library
 libmtdev = cdll.LoadLibrary('libmtdev.so.1')
 
